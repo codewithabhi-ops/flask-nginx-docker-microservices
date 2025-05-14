@@ -1,4 +1,4 @@
-# Flask + NGINX + Docker Compose Project
+# Microservices Project: Flask + NGINX + Docker Compose
 
 ## Overview
 
