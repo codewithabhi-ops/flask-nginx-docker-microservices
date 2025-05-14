@@ -112,7 +112,7 @@ services:
 
 ---
 
-## What You Learn
+## What I Learned
 
 * Building Docker images for Python apps
 * Running Flask apps inside containers
