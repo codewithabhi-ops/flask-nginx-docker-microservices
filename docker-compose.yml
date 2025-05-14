@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  backend1:
+    build:
+      context: ./backend1
+    ports:
+      - "5001:5001"
+
+  backend2:
+    build:
+      context: ./backend2
+    ports:
+      - "5002:5002"
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - backend1
+      - backend2
+
